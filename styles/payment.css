@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-container{
+    margin-left: 1.5rem;
+}
+figure{
+    padding-top:2.5rem;
+}
+
+form{
+    width: 450px;
+    padding: 1rem;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(245,245,245);
+}
+
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+form input{
+    padding-left: .5rem;
+}
+
+form input{
+    height: 2rem;
+}
+
+form input{
+    border:1px solid rgb(235,235,235);
+    border-radius: 0.5rem;
+}
+
+form button{
+    border-radius: 0.5rem;
+    background-color: rgb(78, 131, 0);
+    border:none;
+    color: white;
+    cursor: pointer;
+    height: 2.3rem;
+    width: 130px;
+    margin-left: auto;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Cascada de Agoyán",
+    "date-time": "2025-02-01T09:00",
+    "price": "10.00",
+    "available": "30"
+  },
+  {
+    "name": "Casa del Árbol",
+    "date-time": "2025-02-01T08:30",
+    "price": "5.00",
+    "available": "50"
+  },
+  {
+    "name": "Ruta de las Cascadas",
+    "date-time": "2025-02-01T10:00",
+    "price": "20.00",
+    "available": "15"
+  },
+  {
+    "name": "Mirador de Bellavista",
+    "date-time": "2025-02-01T07:00",
+    "price": "8.00",
+    "available": "25"
+  },
+  {
+    "name": "Termas de la Virgen",
+    "date-time": "2025-02-01T18:00",
+    "price": "12.00",
+    "available": "40"
+  },
+  {
+    "name": "Tungurahua Tours",
+    "date-time": "2025-02-01T06:00",
+    "price": "50.00",
+    "available": "10"
+  },
+  {
+    "name": "Mirador La Virgen",
+    "date-time": "2025-02-01T07:30",
+    "price": "4.00",
+    "available": "60"
+  },
+  {
+    "name": "Cascada El Manto de la Novia",
+    "date-time": "2025-02-01T11:00",
+    "price": "15.00",
+    "available": "20"
+  },
+  {
+    "name": "Zoológico de Baños",
+    "date-time": "2025-02-01T10:30",
+    "price": "10.00",
+    "available": "35"
+  },
+  {
+    "name": "Tarabita San Pedro",
+    "date-time": "2025-02-01T09:30",
+    "price": "6.00",
+    "available": "45"
+  }
+]

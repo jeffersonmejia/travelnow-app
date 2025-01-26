@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelNow</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <!-- Archivo externo de CSS -->
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/Icono.png" alt="Logo" />
+        <span>TravelNow</span>
+      </div>
+
+      <!-- Menú central -->
+      <ul class="menu">
+        <li class="menu-item">Registro</li>
+        <li class="menu-item">Ver destinos</li>
+        <li class="menu-item">Calificar destinos</li>
+        <li class="menu-item">Viajes</li>
+      </ul>
+
+      <!-- Opciones a la derecha -->
+      <div class="right-options">
+        <button id="redirectButton" class="button">Inicio de sesión</button>
+      </div>
+    </header>
+    <div class="cover">
+      <figure>
+        <img src="img/home_background.jpg" alt="" />
+        <figcaption>
+          <h2 class="title">Conoce</h2>
+          <h2 class="subtitle">Baños de Agua Santa</h2>
+        </figcaption>
+      </figure>
+    </div>
+    <section class="hero">
+      <div class="hero-content">
+        <!-- <p>
+          agencias de turismo, lugares de entretenimiento, salud, servicios
+          profesionales y todo lo que necesites.
+        </p> -->
+        <!-- Cuadro de búsqueda -->
+        <div class="search-box">
+          <i>
+            <div class="logo">
+              <img src="img/Buscador.png" alt="Logo" />
+            </div>
+          </i>
+          <!-- Puedes usar un SVG o un ícono de FontAwesome -->
+          <input type="text" placeholder="Busca tu lugar favorito " />
+          <button>Buscar</button>
+        </div>
+        <!-- Cuadrícula de sitios turísticos -->
+        <div class="turistic-section">
+          <!-- <h2>Explora los mejores sitios turísticos</h2> -->
+          <div class="turistic-grid">
+            <!-- Item 1 -->
+            <div class="grid-item">
+              <img
+                src="img/CascadaP.WEBP"
+                alt="Sitio Turístico 1"
+                class="item-image"
+              />
+              <div class="item-info">
+                <h3>Cascada Pailón del Diablo</h3>
+                <p>Una de las cascadas más famosas de Ecuador</p>
+                <button class="info-button">Más información</button>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="grid-item">
+              <img
+                src="img/CasaA.jpg"
+                alt="Sitio Turístico 2"
+                class="item-image"
+              />
+              <div class="item-info">
+                <h3>Casa del Árbol</h3>
+                <p>Hogar del famoso “Columpio del Fin del Mundo”.</p>
+                <button class="info-button">Más información</button>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="grid-item">
+              <img
+                src="img/TermasVirgen.jpg"
+                alt="Sitio Turístico 3"
+                class="item-image"
+              />
+              <div class="item-info">
+                <h3>Termas de la Virgen</h3>
+                <p>Piscinas de agua termal natural perfectas para relajarse.</p>
+                <button class="info-button">Más información</button>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="grid-item">
+              <img
+                src="img/RutaCascadas.jpg"
+                alt="Sitio Turístico 4"
+                class="item-image"
+              />
+              <div class="item-info">
+                <h3>Ruta de las Cascadas</h3>
+                <p>
+                  Una ruta llena de cascadas impresionantes como Manto de la
+                  Novia, Agoyán y El Fantasma.
+                </p>
+                <button class="info-button">Más información</button>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="grid-item">
+              <img
+                src="img/VolcánTungurahua.jpg"
+                alt="Sitio Turístico 5"
+                class="item-image"
+              />
+              <div class="item-info">
+                <h3>Volcán Tungurahua</h3>
+                <p>
+                  Aunque no siempre se puede acceder, los miradores ofrecen
+                  vistas espectaculares de este volcán activo.
+                </p>
+                <button class="info-button">Más información</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <small>TravelNow © 2025</small>
+    </footer>
+    <script src="./scripts/index.js"></script>
+    <!-- Archivo externo de JavaScript -->
+  </body>
+</html>

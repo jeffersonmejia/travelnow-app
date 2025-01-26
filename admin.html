@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip go | Administración</title>
+    <link rel="stylesheet" href="styles/admin.css" />
+  </head>
+  <body>
+    <main>
+      <!-- HEADER -->
+      <ul class="header">
+        <li>
+          <img src="/img/Icono.png" alt="" class="logo" />
+        </li>
+        <li>
+          <a href="/signin.html">Salir</a>
+        </li>
+      </ul>
+      <form class="form-itineraries">
+        <fieldset>
+          <legend>
+            <h2>Agregar itinerario</h2>
+          </legend>
+          <input type="text" placeholder="Nombre" />
+          <input type="datetime-local" />
+          <input type="number" placeholder="Costo" />
+          <input type="number" placeholder="Disponibles" />
+          <div class="btn-group">
+            <input type="reset" value="Limpiar" />
+            <input type="submit" value="Guardar" />
+          </div>
+        </fieldset>
+      </form>
+      <!-- TABLA DE ITINERARIOS -->
+      <table id="itinerary-table">
+        <caption>
+          <h3>Itinerarios</h3>
+        </caption>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nombre</th>
+            <th>Hora salida</th>
+            <th>Costo</th>
+            <th>Disponibles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template id="itinerary-template">
+            <tr>
+              <td id="itinerary-number"></td>
+              <td id="itinerary-name"></td>
+              <td id="itinerary-date-time"></td>
+              <td id="itinerary-price"></td>
+              <td id="itinerary-available"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+      <!-- OPERACIONES: CRUD -->
+      <div class="btn-group">
+        <button class="modify-btn">Modificar</button>
+        <button class="delete-btn">Eliminar</button>
+      </div>
+    </main>
+    <script src="scripts/admin.js"></script>
+  </body>
+</html>
