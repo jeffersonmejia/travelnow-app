@@ -11,9 +11,7 @@ const $itineraryTable = d.querySelector('#itinerary-table tbody'),
   API = isLocalEnviroment ? API_LOCAL : API_GITHUB,
   $signoutAncle = d.getElementById('signout-ancle')
 
-$signoutAncle.href = isLocalEnviroment
-  ? $signoutAncle.href
-  : 'tripgo/signin.html'
+$signoutAncle.href = isLocalEnviroment ? $signoutAncle.href : 'signin.html'
 //TRAER ITINERARIOS DESDE: admin.json
 async function fetchItineraries() {
   try {
