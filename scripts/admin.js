@@ -1,12 +1,19 @@
 const d = document,
-  w = window,
-  $itineraryTable = d.querySelector('#itinerary-table tbody'),
+  w = window
+
+let isLocalEnviroment = !w.location.href.includes('github')
+
+const $itineraryTable = d.querySelector('#itinerary-table tbody'),
   $template = d.getElementById('itinerary-template'),
   $fragment = d.createDocumentFragment(),
   API_LOCAL = 'http://localhost:5500/api/admin.json',
   API_GITHUB = 'https://jeffersonmejia.github.io/tripgo-app/api/admin.json',
-  API = w.location.href.includes('github') ? API_GITHUB : API_LOCAL
+  API = isLocalEnviroment ? API_LOCAL : API_GITHUB,
+  $signoutAncle = d.getElementById('signout-ancle')
 
+$signoutAncle.href = isLocalEnviroment
+  ? $signoutAncle.href
+  : 'tripgo/signin.html'
 //TRAER ITINERARIOS DESDE: admin.json
 async function fetchItineraries() {
   try {
