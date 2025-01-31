@@ -1,8 +1,11 @@
 const d = document,
+  w = window,
   $itineraryTable = d.querySelector('#itinerary-table tbody'),
   $template = d.getElementById('itinerary-template'),
   $fragment = d.createDocumentFragment(),
-  API = 'http://localhost:5500/api/admin.json'
+  API_LOCAL = 'http://localhost:5500/api/admin.json',
+  API_GITHUB = 'https://jeffersonmejia.github.io/tripgo-app/api/admin.json',
+  API = w.location.href.includes('github') ? API_GITHUB : API_LOCAL
 
 //TRAER ITINERARIOS DESDE: admin.json
 async function fetchItineraries() {
