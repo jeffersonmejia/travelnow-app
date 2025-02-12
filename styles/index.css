@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem 2rem;
+  padding-bottom: 1.7rem;
   background-color: #fff; /* Fondo blanco */
   border-bottom: 1px solid rgb(230, 230, 230); /* Línea separadora */
 }
@@ -174,9 +175,9 @@ body {
   margin: 2rem;
   border-radius: 2rem;
   margin-top: 1.5rem;
-  background-color: black;
+  /* background-color: black; */
   overflow: hidden;
-  width: 95%;
+  width: 98%;
 }
 .cover figure {
   height: auto;
@@ -187,7 +188,7 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   z-index: 98;
 }
 
@@ -198,8 +199,23 @@ body {
 
 .cover figcaption {
   position: absolute;
-  transform: translate(150%, -1050%);
-  background-color: red;
+  transform:translate(20%, -300%);
+  display: none;
+}
+
+.cover figcaption h2{
+  font-size: 5rem;
+  color: green;
+}
+
+.cover figcaption h3{
+  font-size: 2.5rem;
+  color: green;
+}
+
+
+.cover figcaption :is(h2, h3){
+  margin: 0;
 }
 
 .cover .title {
