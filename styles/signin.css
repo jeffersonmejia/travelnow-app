@@ -4,10 +4,12 @@ body {
   display: flex;
   height: 100vh;
   overflow-y: hidden;
+  color: rgb(70, 70, 70);
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 
 .container {
-  display: flex;
   width: 100%;
 }
 
@@ -20,6 +22,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: none;
 }
 
 .right-panel {
@@ -30,11 +33,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 80vh;
 }
 
 .login-form {
-  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -48,7 +50,7 @@ body {
 .social-login {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  gap: 12px;
 }
 
 .social-btn {
@@ -60,6 +62,14 @@ body {
   flex: 1;
   margin: 0 5px;
   color: #fff;
+}
+
+.facebook,
+.gmail,
+.apple {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
 }
 
 .facebook {
@@ -81,7 +91,8 @@ body {
 
 .input-group label {
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .input-group input {
@@ -108,22 +119,201 @@ body {
 }
 
 .login-btn {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #28feaf;
+  color: #181818;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .register-btn {
-  background-color: #28a745;
+  background-color: #0b57d0;
+  font-weight: bold;
+  font-size: 14px;
   color: #fff;
 }
 
 .back-link {
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 14px;
-  color: #007bff;
+  color: inherit;
   text-decoration: none;
 }
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  margin: 0;
+}
+
+.logo-container img {
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+  margin-bottom: 0.2rem;
+}
+
+.logo-container h1 {
+  width: 100%;
+  font-size: 1.4rem;
+  color: rgb(50, 50, 50);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.register-btn,
+.login-btn {
+  border-radius: 20px;
+}
+
+.register-btn {
+  width: 150px;
+}
+
+.login-btn {
+  width: 150px;
+}
+
+.forget-container {
+  text-align: center;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.forget-container small:hover {
+  text-decoration: underline;
+}
+
+.modal-forget-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.modal-forget {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-forget-hidden-elements {
+  padding: 0 1.5rem;
+}
+
+.modal-forget input {
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.primary-button {
+  background-color: #28feaf;
+  color: #181818;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-group-modal {
+  width: 100%;
+  display: flex;
+  margin-top: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  flex-direction: row;
+}
+
+.message-success {
+  flex-grow: 1;
+  color: red;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.message-success-ok {
+  color: #0a7e36;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.btn-group-modal small {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: rgb(80, 80, 80);
+}
+
+.btn-group-modal small:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-back {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .login-form {
+    width: 80%;
+  }
+
+  .background-image {
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+  }
+  .right-panel {
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+
+  }
 }

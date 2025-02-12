@@ -3,34 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Inicio de Sesión</title>
+    <title>TravelNow | Iniciar sesión</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/signin.css" />
   </head>
-  <body>
+
+  <body class="hidden">
     <div class="container">
       <div class="left-panel">
-        <img src="img/fondo2.jpeg" alt="Paisaje" class="background-image" />
+        <img src="img/cover.jpg" alt="Paisaje" class="background-image" />
       </div>
       <div class="right-panel">
         <form class="login-form">
-          <h1>Iniciar Sesión</h1>
+          <figure class="logo-container">
+            <img src="img/logo.png" alt="logo" />
+            <figcaption>
+              <h1>Iniciar Sesión</h1>
+            </figcaption>
+          </figure>
           <div class="social-login">
-            <button type="button" class="social-btn facebook">Facebook</button>
-            <button type="button" class="social-btn gmail">Gmail</button>
-            <button type="button" class="social-btn apple">Apple</button>
+            <a class="social-btn facebook" href="https://www.facebook.com/"
+              >Facebook</a
+            >
+            <a
+              class="social-btn gmail"
+              href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=ASSHykpHCEYs7kWok68K-rrx_0NaIZg_5YwIgXIqDdSCOwLucBVu1LvdueNavfbMnZpWv2KG4_9a&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S218280180%3A1738940218261132&ddm=1"
+              >Gmail</a
+            >
+            <a class="social-btn apple" href="https://www.icloud.com/">Apple</a>
           </div>
           <div class="input-group">
-            <label for="email">Email</label>
+            <label for="email">Usuario</label>
             <input
               type="text"
-              id="email"
+              id="user"
               class="user"
-              placeholder="Ingresa tu correo"
+              placeholder="Ingresa tu usuario"
               required
             />
           </div>
           <div class="input-group">
-            <label for="password">Password</label>
+            <label for="password">Contraseña</label>
             <input
               type="password"
               id="password"
@@ -39,18 +52,36 @@
               required
             />
           </div>
-          <div class="checkbox-group">
-            <input type="checkbox" id="promotions" />
-            <label for="promotions"
-              >Quiero recibir descuentos y otras ofertas por correo
-              electrónico</label
-            >
+
+          <div class="btn-group">
+            <button type="button" class="btn register-btn">Registrarse</button>
+            <button type="submit" class="btn login-btn">Ingresar</button>
           </div>
-          <button type="submit" class="btn login-btn">Ingresar</button>
-          <button type="button" class="btn register-btn">Registrarse</button>
         </form>
-        <a href="index.html" class="back-link">Regresar</a>
+        <!-- <a href="#" class="back-link">Regresar</a> -->
+        <div class="forget-container">
+          <small id="forget">Olvidé mi clave/usuario</small>
+          <br>
+          <a href="./index.html" class="btn-back">
+            <small >volver</small>
+          </a>
+        </div>
       </div>
+    </div>
+    <div class="modal-forget-container hidden">
+      <form class="modal-forget">
+        <input
+          type="email"
+          id="forget-query"
+          placeholder="Correo electrónico"
+          required
+        />
+        <small class="message-success"> </small>
+        <div class="btn-group-modal">
+          <small>Cerrar</small>
+          <button class="primary-button" id="query-btn">Consultar</button>
+        </div>
+      </form>
     </div>
     <script src="scripts/signin.js"></script>
   </body>
