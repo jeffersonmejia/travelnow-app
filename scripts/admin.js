@@ -7,7 +7,7 @@ const $itineraryTable = d.querySelector('#itinerary-table tbody'),
   $template = d.getElementById('itinerary-template'),
   $fragment = d.createDocumentFragment(),
   API_LOCAL = 'http://localhost:5500/api/admin.json',
-  API_GITHUB = 'https://jeffersonmejia.github.io/tripgo-app/api/admin.json',
+  API_GITHUB = 'https://jeffersonmejia.github.io/travelnow-app/api/admin.json',
   API = isLocalEnviroment ? API_LOCAL : API_GITHUB,
   $signoutAncle = d.getElementById('signout-ancle')
 
