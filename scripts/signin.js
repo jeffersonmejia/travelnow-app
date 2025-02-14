@@ -56,6 +56,9 @@ d.addEventListener('click', (e) => {
     e.preventDefault()
     forgetQueryClicked()
   }
+  if(e.target.matches('.login-btn')){
+            w.location.pathname = 'travelnow-app/admin.html'
+  }
 })
 
 d.addEventListener('DOMContentLoaded', (e) => {
